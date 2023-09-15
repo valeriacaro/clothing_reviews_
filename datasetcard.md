@@ -38,14 +38,14 @@ The Starbucks Review Dataset is primarily focused on the English language. All d
 
 Here are a few sample data instances from the Starbucks Review Dataset to illustrate its content and structure:
 
-1.**Name:** Helen
+1. **Name:** Helen
 - **Location:** Wichita Falls, TX
 - **Date:** Reviewed Sept. 13, 2023
 - **Rating:** 5
 - **Review:** Amber and LaDonna at the Starbucks on Southwest Parkway are always so warm and welcoming. There is always a smile in their voice when they greet you at the drive-thru. And their customer service is always spot-on, they always get my order right and with a smile. I would actually give them more than 5 stars if they were available.
 - **Image_Links:** ['No Images']
 
-2.**Name:** Courtney
+2. **Name:** Courtney
 - **Location:** Apopka, FL
 - **Date:** Reviewed July 16, 2023
 - **Rating:** 5
