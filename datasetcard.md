@@ -8,8 +8,8 @@
 
 ## Dataset Description
 
-- **Homepage:** [Starbucks Reviews Dataset on Kaggle](https://www.kaggle.com/datasets/harshalhonde/starbucks-reviews-dataset)
-- **Repository:** [Starbucks Reviews Dataset on Kaggle](https://www.kaggle.com/datasets/harshalhonde/starbucks-reviews-dataset)
+- **Homepage:** [Women's E-Commerce Clothing Reviews](https://www.kaggle.com/datasets/nicapotato/womens-ecommerce-clothing-reviews)
+- **Repository:** [Women's E-Commerce Clothing Reviews](https://www.kaggle.com/datasets/nicapotato/womens-ecommerce-clothing-reviews)
 
   
 - **Paper:** {{ paper_url | default("", true)}}
@@ -18,41 +18,47 @@
 
 ### Dataset Summary
 
-This dataset contains a comprehensive collection of consumer reviews and ratings for Starbucks, a renowned coffeehouse chain. The data was collected through web scraping and includes textual reviews, star ratings, location information, and image links from multiple pages on the ConsumerAffairs website. It offers valuable insights into customer sentiment and feedback about Starbucks locations.
+This is a Women’s Clothing E-Commerce dataset revolving around the reviews written by customers. Its nine supportive features offer a great environment to parse out the text through its multiple dimensions. Because this is real commercial data, it has been anonymized, and references to the company in the review text and body have been replaced with “retailer”.
 
 ### Supported Tasks and Leaderboards
 
-The Starbucks Review Dataset is designed to support:
-- **Sentiment Analysis:** Researchers and data analysts can use this dataset to perform sentiment analysis to understand customer sentiment towards Starbucks.
+The Women’s Clothing E-Commerce dataset is designed to support:
+- **Sentiment Analysis:** Researchers and data analysts can use this dataset to perform sentiment analysis to understand customer sentiment towards clothing and if they recommend it.
 - **Consumer Insights:** Businesses can gain valuable insights into customer preferences and areas for improvement based on the reviews and ratings.
 - **Natural Language Processing (NLP):** NLP practitioners can utilize textual reviews for various NLP tasks, such as text classification, summarization, and topic modelling.
 
 ### Languages
 
-The Starbucks Review Dataset is primarily focused on the English language. All data instances within this dataset are in English.
+The Women’s Clothing E-Commerce dataset is primarily focused on the English language. All data instances within this dataset are in English.
 
 
 ## Dataset Structure
 
 ### Data Instances
 
-Here are a few sample data instances from the Starbucks Review Dataset to illustrate its content and structure:
+Here are a few sample data instances from the Women’s Clothing E-Commerce dataset to illustrate its content and structure:
 
-| Name              | Location              | Date                    | Rating | Review | Image Links |
-| :---------------- | :------:              | :----:                  | :----: | :----: | ----------: |
-| Helen             | Wichita Falls, TX     |Reviewed Sept. 13, 2023 |5      |Amber and LaDonna at the Starbucks on Southwest Parkway are always so warm and welcoming. There is always a smile in their voice when they greet you at the drive-thru. And their customer service is always spot-on, they always get my order right and with a smile. I would actually give them more than 5 stars if they were available. |['No Images'] |
-| Courtney             | Apopka, FL   |Reviewed July 16, 2023 |5      |** at the Starbucks by the fire station on 436 in Altamonte Springs, FL made my day and finally helped me figure out the way to make my drink so I‚Äôd love it. She took time out to talk to me for 2 minutes to make my experience better than what I‚Äôm used to. It was much appreciated! I‚Äôve had bad experiences one after another at the Starbucks that‚Äôs closest to me in my work building with my drinks not being great along with not great customer service from specific baristas. Niko was refreshing to speak to and pleasant. The drink was perfect! Store 11956 |['No Images'] |
+| ID              | Clothing ID             | Age                    | Title | Review Text | Rating | Recommended IND | Positive Feedback Count| Division Name | Department Name | Class Name |
+| :---------------- | :------:              | :----:                  | :----: | :----: | :----------: | :----------: |:----------: |:----------: |:----------: | ----------: |
+|0|767|33|  |Absolutely wonderful - silky and sexy and comfortable|4|1|0|Initmates|Intimate|Intimate|
+|1|1080|34|  |Love this dress! it's sooo pretty. i happened to find it in a store, and i'm glad i did bc i never...|5|1|4|General|Dresses|Dresses|
+|2|1077|60|Some major design flaws |I had such high hopes for this dress and really wanted it to work for me. i initially ordered the pe...|3|0|0|General|Dresses|Dresses|
 
 ### Data Fields
 
-The Starbucks Review Dataset includes the following key data fields, each serving a specific purpose in organizing and describing the data:
+The Women’s Clothing E-Commerce dataset includes the following key data fields, each serving a specific purpose in organizing and describing the data; it includes 23486 rows and 10 feature variables:
 
-1. **Name:** Name of the reviewer (text).
-2. **Location:** Location or city of the reviewer (text).
-3. **Date:** Date when the review was posted (text).
-4. **Rating:** Star rating given by the reviewer (1 to 5).
-5. **Review:** Textual content of the review (text) = Image_Links: Links to associated images (text).
-6. **Image Links:** Images.
+1. **Clothing ID:** Integer Categorical variable that refers to the specific piece being reviewed.
+2. **Age:** Positive Integer variable that refers to the reviewers age.
+3. **Title:** String variable that refers to the title of the review.
+4. **Review Text:** String variable for the review body, its content itself.
+5. **Rating:** Positive Ordinal Integer variable for the product score granted by the customer from 1 Worst, to 5 Best.
+6. **Recommended IND:** Binary variable stating if the customer recommends the product; 1 is recommended, 0 is not recommended.
+7. **Positive Feedback Count:** Positive Integer documenting the number of other customers who found this review positive.
+
+8. **Division Name:** Categorical name of the product high level division.
+9. **Department Name:** Categorical name of the product department name.
+10. **Class Name:** Categorical name of the product class name.
 
 
 ### Data Splits
