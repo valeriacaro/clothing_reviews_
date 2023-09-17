@@ -14,9 +14,8 @@ The model used is a Long Short-Term Memory (LSTM) model, a type of recurrent neu
 
 The LSTM (Long Short-Term Memory) model is a sequential neural network architecture with dropout regularization. It is trained on X% of the dataset, and is designed for opinion analysis and product recommendation prediction.
 
-Each opinion is associated with a binary recommendation label (1 for recommended and 0 for not recommended). During training, the model adjusts its internal parameters to make accurate predictions based on patterns it learns from the training data.
+Each opinion is associated with a binary recommendation label (1 for recommended and 0 for not recommended).
 
-The metric used was Accuracy, as it is as relevant to know the good ones as the bad ones.
 
 - **Developed by:** Valèria Caro Via, Esther Fanyanàs i Ropero, Claudia Len Manero
 - **Shared by [optional]:** {{ shared_by | default("[More Information Needed]", true)}}
