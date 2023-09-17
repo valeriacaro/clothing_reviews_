@@ -36,10 +36,7 @@ The model is designed to analyze customer reviews and comments in order to under
 
 ### Direct Use
 
-This is useful for other customers and companies to make data-driven decisions, without having to read all the reviews and only know whether or not they recommend the product.
-
-<!-- This section is for the model use without fine-tuning or plugging into a larger ecosystem/app. -->
-
+This is useful for companies to make data-driven decisions, without having to read all the reviews. An idea of the product recommendations will be available and thus be able to make improvements through a global view of all the reviews.
 
 ### Downstream Use [optional]
 
@@ -57,9 +54,9 @@ This is useful for other customers and companies to make data-driven decisions, 
 
 - **Biased content**: The model may be less accurate in predicting the sentiment of opinions that use less common language than the training data.
 
-- Risks**: The model will learn from opinions about people, and will not have a context for identifying whether this opinion fits a person or not. e.g. fat people.
+- **Risks**: The model will learn from opinions about people, and will not have a context for identifying whether this opinion fits a person or not. e.g. fat people.
 
-- Limitations**: The model may be less accurate for text data that is significantly different from the e-commerce reviews it was trained on. For example, it may not work well with social media posts or formal business communications.
+- **Limitations**: The model may be less accurate for text data that is significantly different from the e-commerce reviews it was trained on. For example, it may not work well with social media posts or formal business communications.
 <!-- This section is meant to convey both technical and sociotechnical limitations. -->
 
 ### Recommendations
