@@ -4,7 +4,7 @@
 {{ card_data }}
 ---
 
-# Dataset Card for Starbucks Reviews
+# Dataset Card for Women's E-Commerce Clothing Reviews
 
 ## Dataset Description
 
