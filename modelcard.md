@@ -64,7 +64,7 @@ The model has been trained from reviews, thus there is a subjective opinion in t
 
 ### Recommendations
 
-The model is recommended for analyzing overall trends in customer sentiment and identifying areas for improvement based on customer feedback.
+The model is recommended for analyzing overall women's trends in customer sentiment and identifying areas for improvement based on customer feedback.
 
 ## How to Get Started with the Model
 
@@ -119,12 +119,8 @@ Use the code below to get started with the model.
 
 #### Metrics
 
-The evaluation metrics used have been:
-
+The metric used to evaluate the model is *Accuracy*, as we want to be as sure as possible that all opinions are well represented: in the bad ones the product is not recommended and in the good ones it is.
 - Accuracy: 
-<!-- These are the evaluation metrics being used, ideally with a description of why. -->
-
-{{ testing_metrics | default("[More Information Needed]", true)}}
 
 ### Results
 
