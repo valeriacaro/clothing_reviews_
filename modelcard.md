@@ -4,24 +4,24 @@
 {{ card_data }}
 ---
 
-# Model Card for {{ model_id | default("Model ID", true) }}
+# Model Card for Clothing Reviews
 
-<!-- Provide a quick summary of what the model is/does. -->
-
-{{ model_summary | default("", true) }}
+The model used is a Long Short-Term Memory (LSTM) model, a type of recurrent neural network (RNN) designed to analyze product reviews and predict whether people are likely to recommend the product or not. It leverages the structure of text data to capture dependencies and patterns in reviews, allowing it to make binary recommendations based on the sentiment and content of incoming reviews.
 
 ## Model Details
 
 ### Model Description
 
-<!-- Provide a longer summary of what this model is. -->
+The LSTM (Long Short-Term Memory) model is a sequential neural network architecture with dropout regularization. It is trained on X% of the dataset, and is designed for opinion analysis and product recommendation prediction.
 
-{{ model_description | default("", true) }}
+Each opinion is associated with a binary recommendation label (1 for recommended and 0 for not recommended). During training, the model adjusts its internal parameters to make accurate predictions based on patterns it learns from the training data.
 
-- **Developed by:** {{ developers | default("[More Information Needed]", true)}}
+The metric used was Accuracy, as it is as relevant to know the good ones as the bad ones.
+
+- **Developed by:** Valèria Caro Via, Esther Fanyanàs i Ropero, Claudia Len Manero
 - **Shared by [optional]:** {{ shared_by | default("[More Information Needed]", true)}}
-- **Model type:** {{ model_type | default("[More Information Needed]", true)}}
-- **Language(s) (NLP):** {{ language | default("[More Information Needed]", true)}}
+- **Model type:** LSTM
+- **Language(s) (NLP):** English
 - **License:** {{ license | default("[More Information Needed]", true)}}
 - **Finetuned from model [optional]:** {{ finetuned_from | default("[More Information Needed]", true)}}
 
@@ -35,13 +35,14 @@
 
 ## Uses
 
-<!-- Address questions around how the model is intended to be used, including the foreseeable users of the model and those affected by the model. -->
+The model is designed to analyze customer reviews and comments in order to understand sentiment and determine whether customers are likely to recommend a product positively or not. 
 
 ### Direct Use
 
+This is useful for other customers and companies to make data-driven decisions, without having to read all the reviews and only know whether or not they recommend the product.
+
 <!-- This section is for the model use without fine-tuning or plugging into a larger ecosystem/app. -->
 
-{{ direct_use | default("[More Information Needed]", true)}}
 
 ### Downstream Use [optional]
 
@@ -57,15 +58,16 @@
 
 ## Bias, Risks, and Limitations
 
-<!-- This section is meant to convey both technical and sociotechnical limitations. -->
+- **Biased content**: The model may be less accurate in predicting the sentiment of opinions that use less common language than the training data.
 
-{{ bias_risks_limitations | default("[More Information Needed]", true)}}
+- Risks**: The model will learn from opinions about people, and will not have a context for identifying whether this opinion fits a person or not. e.g. fat people.
+
+- Limitations**: The model may be less accurate for text data that is significantly different from the e-commerce reviews it was trained on. For example, it may not work well with social media posts or formal business communications.
+<!-- This section is meant to convey both technical and sociotechnical limitations. -->
 
 ### Recommendations
 
-<!-- This section is meant to convey recommendations with respect to the bias, risk, and technical limitations. -->
-
-{{ bias_recommendations | default("Users (both direct and downstream) should be made aware of the risks, biases and limitations of the model. More information needed for further recommendations.", true)}}
+The model is recommended for analyzing overall trends in customer sentiment and identifying areas for improvement based on customer feedback.
 
 ## How to Get Started with the Model
 
@@ -120,6 +122,9 @@ Use the code below to get started with the model.
 
 #### Metrics
 
+The evaluation metrics used have been:
+
+- Accuracy: 
 <!-- These are the evaluation metrics being used, ideally with a description of why. -->
 
 {{ testing_metrics | default("[More Information Needed]", true)}}
