@@ -46,18 +46,21 @@ This is useful for companies to make data-driven decisions, without having to re
 
 ### Out-of-Scope Use
 
-<!-- This section addresses misuse, malicious use, and uses that the model will not work well for. -->
-
-{{ out_of_scope_use | default("[More Information Needed]", true)}}
+The model has been trained from reviews, thus there is a subjective opinion in the text.
 
 ## Bias, Risks, and Limitations
 
-- **Biased content**: The model may be less accurate in predicting the sentiment of opinions that use less common language than the training data.
+### Bias
+- The opinion on a product depends on several subjective aspects that are not covered by the model, such as the size of women.
 
-- **Risks**: The model will learn from opinions about people, and will not have a context for identifying whether this opinion fits a person or not. e.g. fat people.
+### Risks
 
-- **Limitations**: The model may be less accurate for text data that is significantly different from the e-commerce reviews it was trained on. For example, it may not work well with social media posts or formal business communications.
-<!-- This section is meant to convey both technical and sociotechnical limitations. -->
+
+### Limitations 
+- The model may be less accurate for text data that is significantly different from the e-commerce reviews it was trained on.
+- The model may be less accurate with male review text data, as all instances of the model are female.
+- The model has been trained in English, so it does not support the input of text in other languages.
+- The model does not interpret emojis.
 
 ### Recommendations
 
