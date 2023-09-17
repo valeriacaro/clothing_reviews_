@@ -120,6 +120,7 @@ Use the code below to get started with the model.
 #### Metrics
 
 The metric used to evaluate the model is *Accuracy*, as we want to be as sure as possible that all opinions are well represented: in the bad ones the product is not recommended and in the good ones it is.
+
 - Accuracy: 
 
 ### Results
