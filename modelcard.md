@@ -6,15 +6,13 @@
 
 # Model Card for Clothing Reviews
 
-The model used is a Long Short-Term Memory (LSTM) model, a type of recurrent neural network (RNN) designed to analyze product reviews and predict whether people are likely to recommend the product or not. It leverages the structure of text data to capture dependencies and patterns in reviews, allowing it to make binary recommendations based on the sentiment and content of incoming reviews.
+The model used is a Long Short-Term Memory (LSTM) model, a type of recurrent neural network (RNN) designed to analyze product reviews and predict whether people are likely to recommend the product or not. 
 
 ## Model Details
 
 ### Model Description
 
-The LSTM (Long Short-Term Memory) model is a sequential neural network architecture with dropout regularization. It is trained on X% of the dataset, and is designed for opinion analysis and product recommendation prediction.
-
-Each opinion is associated with a binary recommendation label (1 for recommended and 0 for not recommended).
+The LSTM (Long Short-Term Memory) model is a sequential neural network architecture with dropout regularization. It is trained on X% of the dataset, and is designed for opinion analysis and product recommendation prediction. It leverages the structure of text data to capture dependencies and patterns in reviews, allowing it to make binary recommendations based on the sentiment and content of incoming reviews.
 
 
 - **Developed by:** Valèria Caro Via, Esther Fanyanàs i Ropero, Claudia Len Manero
